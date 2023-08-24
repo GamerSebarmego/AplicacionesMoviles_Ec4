@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "814072511011",
+    "project_id": "fast-recipe-56d7b",
+    "storage_bucket": "fast-recipe-56d7b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:814072511011:android:9f344f6db638aeb4b7cf96",
+        "android_client_info": {
+          "package_name": "com.pe.edu.idat.grupo2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "814072511011-l2q1kj3bsilhn8iachuu1cf7uj1avgq7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pe.edu.idat.grupo2",
+            "certificate_hash": "e5d72348cabd8b90285a2072a8fc0207fd5a2de5"
+          }
+        },
+        {
+          "client_id": "814072511011-cou8d736kcvo2a3h5tlm1ul3u33chhbo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDy7SBDwWjY4tz91i57ImCla_QuMsh2x1I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "814072511011-6m4qovtlc0iav845h7gcroshb94g2b1f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

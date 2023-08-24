@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/recetas_grap"
+    app:startDestination="@id/listarApiFragment">
+
+    <fragment
+        android:id="@+id/listarApiFragment"
+        android:name="com.pe.edu.idat.grupo2.ui.fragment.ListarApiFragment"
+        android:label="fragment_listar_api"
+        tools:layout="@layout/fragment_listar_api" >
+        <action
+            android:id="@+id/action_listarApiFragment_to_recetaDetailFragment"
+            app:destination="@id/recetaDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoritoFragment"
+        android:name="com.pe.edu.idat.grupo2.ui.fragment.FavoritoFragment"
+        android:label="fragment_favorito"
+        tools:layout="@layout/fragment_favorito" >
+        <action
+            android:id="@+id/action_favoritoFragment_to_recetaDetailFragment"
+            app:destination="@id/recetaDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listnubeFragment"
+        android:name="com.pe.edu.idat.grupo2.ui.fragment.ListnubeFragment"
+        android:label="fragment_listnube"
+        tools:layout="@layout/fragment_listnube" />
+
+    <fragment
+        android:id="@+id/recetaDetailFragment"
+        android:name="com.pe.edu.idat.grupo2.ui.fragment.RecetaDetailFragment"
+        android:label="fragment_receta_detail"
+        tools:layout="@layout/fragment_receta_detail" >
+        <argument
+            android:name="receta"
+            app:argType="com.pe.edu.idat.grupo2.model.Recetas" />
+    </fragment>
+    <fragment
+        android:id="@+id/accountFragment"
+        android:name="com.pe.edu.idat.grupo2.ui.fragment.AccountFragment"
+        android:label="fragment_account"
+        tools:layout="@layout/fragment_account" />
+</navigation>
