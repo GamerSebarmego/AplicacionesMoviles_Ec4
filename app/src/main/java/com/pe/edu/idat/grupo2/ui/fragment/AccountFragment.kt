@@ -18,15 +18,19 @@ import com.pe.edu.idat.grupo2.ui.LoginActivity
 
 class AccountFragment : Fragment() {
     private lateinit var binding: FragmentAccountBinding
+    // Se recoge el Shared Preferences de la clase Login
     private lateinit var sharedPreferences: SharedPreferences
     private lateinit var firebaseAuth: FirebaseAuth
+    //Generacion de la variable para recibir la EMAIL_DATA
     private lateinit var email: String
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
+        //Se recoge la data de SHaredPreferences a traves de la SESSION_PREFERENCES_KEY
         sharedPreferences=requireActivity().getSharedPreferences(LoginActivity.SESSION_PREFERENCES_KEY, Context.MODE_PRIVATE)
+        //Se guarda la EMAIL_DATA en la variable email
         email=sharedPreferences.getString(LoginActivity.EMAIL_DATA,"") ?:""
+        //Inicializando el firebaseAuth
         firebaseAuth= Firebase.auth
     }
 
@@ -41,6 +45,13 @@ class AccountFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.txtemail.text=email
+        /*Al dar clic al boton se activara dicha secuencia de procesos:
+        1) Se editara la EMAIL_DATA y se dejara vacio ""
+        2) Se aplica el edit con el apply
+        3) Se le indica al firebase que cierre sesion en la app
+        4) Se redirige a la pantalla de Login
+        
+        */
         binding.btnLogout.setOnClickListener{
             with(sharedPreferences.edit()){
                 putString(LoginActivity.EMAIL_DATA,"")
