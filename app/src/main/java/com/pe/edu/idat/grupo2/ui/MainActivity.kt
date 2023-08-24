@@ -19,11 +19,11 @@ class MainActivity : AppCompatActivity() {
         val navController = fragment.navController
         binding.bnvinferior.setupWithNavController(navController)
 
+        /*
         binding.fabAddReceta.setOnClickListener{
             val intent = Intent(this, AddRecetasNubeActivity::class.java)
             startActivity(intent)
-        }
-
+        }*/
     }
 
 }

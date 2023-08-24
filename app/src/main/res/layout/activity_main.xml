@@ -27,7 +27,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
+    <!--<com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab_add_receta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -39,6 +39,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.942"
-        app:srcCompat="@drawable/id_add_receta" />
+        app:srcCompat="@drawable/id_add_receta" /> -->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

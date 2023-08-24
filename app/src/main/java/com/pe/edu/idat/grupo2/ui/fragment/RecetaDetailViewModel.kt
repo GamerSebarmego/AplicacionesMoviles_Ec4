@@ -22,7 +22,6 @@ class RecetaDetailViewModel (application: Application):AndroidViewModel(applicat
         viewModelScope.launch(Dispatchers.IO) {
             repository.addToFavorites(recetas)
         }
-
     }
 
     fun deleteRecetas(recetas: Recetas){
@@ -30,4 +29,5 @@ class RecetaDetailViewModel (application: Application):AndroidViewModel(applicat
             repository.deleteToFavorites(recetas)
         }
     }
+
 }
